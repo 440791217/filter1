@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="gpu\GpuFilter.cpp">
+      <Filter>gpu</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="test\test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\filter_sys.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Reader.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\debuglog.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\const.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Logger.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="gpu\GpuFilter.h">
+      <Filter>gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Detector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="filter1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="test">
+      <UniqueIdentifier>{fbc3a189-81a2-40c9-a17a-66c07a0de5dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{21e04073-ff8a-40b4-997e-f45ed45d001a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gpu">
+      <UniqueIdentifier>{ada7d257-0cc6-4a9e-ba2e-7124d2936e85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="utils\Reader.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Logger.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Detector.cpp" />
+  </ItemGroup>
+</Project>
